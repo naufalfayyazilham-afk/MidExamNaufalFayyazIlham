@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEF7FF"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Enter Student Name -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_field"
+        android:hint="Enter Student Name"
+        android:inputType="textPersonName|textCapWords"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textColor="#1D1B20"
+        android:textColorHint="#B8B3BD"
+        android:textSize="22sp" />
+
+    <!-- Enter Student ID -->
+    <EditText
+        android:id="@+id/etId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_field"
+        android:hint="Enter Student ID"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textColor="#1D1B20"
+        android:textColorHint="#B8B3BD"
+        android:textSize="22sp" />
+
+    <!-- Has Enrolled -->
+    <CheckBox
+        android:id="@+id/cbEnrolled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_box"
+        android:buttonTint="#6650A4"
+        android:padding="12dp"
+        android:text="Has Enrolled"
+        android:textColor="#1D1B20"
+        android:textSize="22sp" />
+
+    <!-- Buttons (semua ungu) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#6650A4"
+            android:text="ADD"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="#6650A4"
+            android:text="EDIT"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="#6650A4"
+            android:text="DELETE"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="#6650A4"
+            android:text="VIEW"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Daftar student -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:divider="#CAC4D0"
+        android:dividerHeight="1dp" />
+</LinearLayout>
